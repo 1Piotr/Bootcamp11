@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game</title>
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Into the woods</h1>
-    <figure>
-        <img src="img/wood.jpg" alt="woods">
-        <figcaption>
-            Are you going right or left?
-        </figcaption>
-    </figure>
-    <form action="page1.html" id="left">
-        <label for="left"><<< Left</label>
-        <input name="left" type="submit" value="Left">
-    </form>
-    <form action="page2.html" id="right">
-        <label for="right">Right >>></label>
-        <input name="right" type="submit" value="Right">
+    <h1>Please submit the form to join the game</h1>
+    <form action="page0.html" id="joinerForm">
+        <label for="name">Name:</label><br>
+        <input name="name" type="text" placeholder="Name"/><br>
+        <label for="email">Email:</label><br>
+        <input name="email" type="email" placeholder="email@website.com"/><br>
+        <label for="address">Address</label><br>
+        <input name="address" type="text"><br>
+        <label for="postcode">Postcode</label><br>
+        <input name="postcode" type="text"><br>
+        <label for="dob">Date of Birth</label><br>
+        <input name="dob" type="date"><br><br>
+        <input type="submit" value="Join"/>
     </form>
 </body>
 </html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="major">
+        <h1>Please submit the form to join the game</h1>
+        <form action="page0.html" class="center" id="joinerForm">
+            <label for="name" class="pretty-label">Name:</label>
+            <input name="name" type="text" placeholder="Required" class="joiner" required/>
+            <label for="email" class="pretty-label">Email:</label>
+            <input name="email" type="email" placeholder="Required" class="joiner" required/>
+            <label for="address" class="pretty-label">Address:</label>
+            <input name="address" type="text" placeholder="Optional" class="joiner">
+            <label for="postcode" class="pretty-label">Postcode</label>
+            <input name="postcode" type="text" placeholder="Optional" class="joiner">
+            <label for="dob" class="pretty-label">Date of Birth</label>
+            <input name="dob" type="date" placeholder="Optional" class="joiner"><br><br>
+            <input type="submit" value="Join" class="pretty-button"/>
+        </form>
+    </div>
+</body>
+</html>
