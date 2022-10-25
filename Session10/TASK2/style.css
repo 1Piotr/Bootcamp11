@@ -1,0 +1,48 @@
+body {
+    height:100vh;
+    background-image: url(img/scale.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0%;
+    padding:0%;
+}
+form  {
+    max-width: 400px;
+    margin:auto;
+}
+#system {
+
+margin-top:10vh;
+
+}
+input {
+    max-width: 150px;
+}
+
+#metric label, input[type="submit"]{
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+   
+h2 {
+    background-color: white;
+    max-width: fit-content;
+    border-radius: 1vh;
+} 
+h5 {
+    margin-left: auto;
+    
+}
+
+.non-active {
+    display:none;
+}
+
+#imperial , input[type="submit"]
+ {
+    margin:2vh auto;
+}
+.col {
+    min-width: 150px;
+}
