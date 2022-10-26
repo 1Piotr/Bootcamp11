@@ -8,16 +8,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Shopping List</h1>
-    
-        <label for="item">What to buy</label>
+    <div>
+        <h1>Shopping List</h1>
+        <input type="submit" onclick="addToList()" value="Add to the list">
         <input id="item" type="text" value="" required>
-        <input type="submit" onclick="addToList()" value="Buy!!!">
-    
-    <h2>My list</h2>
-    <ul id="myList">
-
-    </ul>    
+        <input type="submit" onclick="removeFromList()" value="Remove from the list">  
+        <h2>My list</h2>
+        <ul id="myList">
+        </ul>
+    </div>    
  <script src="script.js"></script>   
 </body>
 </html>
