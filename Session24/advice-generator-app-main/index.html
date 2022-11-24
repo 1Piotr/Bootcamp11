@@ -34,9 +34,10 @@
   .then((data) => {outputHtml(data)});
   
   function outputHtml(d) {
-    console.log(d.slip.advice)
-    window.alert(d.slip.advice)
     const myResult =d.slip.advice
+    console.log(myResult )
+    window.alert(myResult)
+    
     document.getElementById.innerHTML = myResult
     }
   outputHtml();
