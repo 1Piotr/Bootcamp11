@@ -34,8 +34,8 @@
     fetch('https://api.adviceslip.com/advice')
   .then((response) => response.json())
   .then((data) => myData.push(data));
-  console.log(myData[0])
-  window.alert(myData[0])
+  console.log(myData[0].slip.advice)
+  window.alert(myData[0].slip.advice)
     document.getElementById('advice').innerHTML =myData[0].slip.advice
     
   }
