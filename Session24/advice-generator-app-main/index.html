@@ -34,8 +34,8 @@
   .then((data) => {outputHtml(data)});
   
   function outputHtml(d) {
-    console.log(d)
-    const myResult =d.advice[slip][advice]
+    console.log(d.slip.advice)
+    const myResult =d.slip.advice
     document.getElementById.innerHTML = myResult
     }
   outputHtml();
