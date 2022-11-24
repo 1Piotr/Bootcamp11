@@ -9,16 +9,17 @@
   <title>Frontend Mentor | Advice generator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script src="style.css"></script>
 </head>
 <body>
 
-  Advice #<!-- Advice ID goes here -->
+  
   <div id="box">
-    <p id="advice"></p>
+    <div>
+      <p>Advice # <span id="num"></span></p>
+      <p id="advice"></p>
+    </div>
+    
   </div>
 
   "<!-- Advice text goes here -->"
@@ -39,6 +40,7 @@
     window.alert(myResult)
     
     document.getElementById('advice').innerHTML = myResult
+    document.getElementById('num').innerHTML = d.slip.id
     }
   
  
