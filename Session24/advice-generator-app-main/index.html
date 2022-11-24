@@ -31,14 +31,13 @@
   let myData = []
   fetch('https://api.adviceslip.com/advice')
   .then((response) => response.json())
-  .then((data) => console.log(data));
+  .then((data) => {outputHtml(data)});
   
-  //function outputHtml(d) {
-    //const results =d.results.forEach(function(item,index)) {
-      //  document.getElementbyId("l"),innerHtml='';}
-    
-    //}
-  //outputHtml();
+  function outputHtml(d) {
+    const myResult =d.result.slip.advice
+    document.getElementById.innerHTML = myResult
+    }
+  outputHtml();
 
   
 
