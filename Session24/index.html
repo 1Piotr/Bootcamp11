@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+</head>
+<body>
+    <h1>Movies</h1>
+    <ul id="l"></ul>
+    <script>
+        fetch('http://showtimes.everyday.in.th/api/v2/movie/'
+  .then((response) => response.json())
+  .then((data) => {outputHtml(data)});
+  function outputHtml(d) {
+    const results =d.results.forEach(function(item,index)) {
+        document.getElementbyId("l"),innerHtml='';
+        const reult = d.result.forEach(function(item,index)){
+
+        }
+    }
+  }
+    </script>
+</body>
+</html>
