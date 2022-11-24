@@ -1,5 +1,38 @@
-.box {
+body {
+    background-color:rgb(1, 7, 1) ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#box {
     display:flex;
     justify-content: center;
     align-items: center;
+    height:500px;
+
 }
+#container {
+    display: flex;
+    max-width: 300px;
+    min-height: 300px;
+    background-color:rgb(32, 53, 32) ;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2vh;
+}
+
+p {
+    min-width:100%;
+    text-align: center;
+}
+#num1 {
+    color:lightgreen
+}
+#ad2 {
+    color:white
+}
+
+
+
+
+
+
