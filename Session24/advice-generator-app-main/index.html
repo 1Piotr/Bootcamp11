@@ -15,10 +15,10 @@
 
   
   <div id="box">
-    <div>
+    
       <p>Advice # <span id="num"></span></p>
       <p id="advice"></p>
-    </div>
+    
     
   </div>
 
@@ -36,8 +36,7 @@
   
   function outputHtml(d) {
     const myResult =d.slip.advice
-    console.log(myResult )
-    window.alert(myResult)
+    
     
     document.getElementById('advice').innerHTML = myResult
     document.getElementById('num').innerHTML = d.slip.id
