@@ -29,11 +29,12 @@
   </div>
   <script>
   let myData = []
-  fetch('https://api.adviceslip.com/advice')
+  
+  function outputHtml() {
+    fetch('https://api.adviceslip.com/advice')
   .then((response) => response.json())
   .then((data) => myData.push(data));
   console.log(myData[0])
-  function outputHtml() {
 
     document.getElementById('advice').innerHTML =myData[0].slip.advice
     window.alert(myData[0].slip.advice)
