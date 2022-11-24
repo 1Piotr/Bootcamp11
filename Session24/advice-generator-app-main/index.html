@@ -29,17 +29,16 @@
   </div>
   <script>
   let myData = []
-  
-  function outputHtml() {
-    fetch('https://api.adviceslip.com/advice')
+  fetch('https://api.adviceslip.com/advice')
   .then((response) => response.json())
-  .then((data) => myData.push(data));
-  console.log(myData[0].slip.advice)
-  window.alert(myData[0].slip.advice)
-    document.getElementById('advice').innerHTML =myData[0].slip.advice
+  .then((data) => console.log(data));
+  
+  //function outputHtml(d) {
+    //const results =d.results.forEach(function(item,index)) {
+      //  document.getElementbyId("l"),innerHtml='';}
     
-  }
-  outputHtml();
+    //}
+  //outputHtml();
 
   
 
