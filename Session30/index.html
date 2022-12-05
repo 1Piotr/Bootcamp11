@@ -19,6 +19,9 @@
         form .form-row {
             margin-bottom: 1rem;
         }
+        .otherAllergen {
+            display:none;
+        }
 ​
     </style>
 </head>
@@ -79,15 +82,16 @@
             <div class="form-row">
                 <label>Alergies</label><br>
                 <label for="nuts">Nuts<label/>
-                <input type="checkbox" name="nuts" value="nuts">
+                <input type="checkbox" id="nuts" name="allergies" value="nuts">
                 <label for="gluten">Gluten<label/>
-                <input type="checkbox" name="gluten" value="gluten">
+                <input type="checkbox" id="gluten" name="allergies" value="gluten">
                 <label for="soya">Soya<label/>
-                <input type="checkbox" name="Soya" value="Soya">
-                <label for="nuts">Eggs<label/>
-                <input type="checkbox" name="eggs" value="eggs">
+                <input type="checkbox"  id="soya"name="allergies" value="Soya">
+                <label for="egg">Eggs<label/>
+                <input type="checkbox"  id="egg"name="allergies" value="eggs">
                 <label for="others">Others please spcecify<label/>
-                <input type="checkbox" name="others" value="others">
+                <input type="checkbox"  id="others"name="allergies" value="others" onchange="other()">
+                <textarea id="otherAllergen" class="otherAllergen" rows="3" cols="50"></textarea>
             </div>
             <div class="form-row">
                 <label for="vegan">Vegan</label>
@@ -110,15 +114,22 @@
     </div>
 ​
     <script>
-        /* use a function for the exact format desired... */
-        const d = new Date();
+    /* use a function for the exact format desired... */
+    const d = new Date();
         const dateInput = document.getElementById('booking-date');
         const todayDate =  d.toISOString().substring(0,10);
         dateInput.value = todayDate;
         dateInput.min = todayDate;
         dateInput.max = d.setMonth(d.getMonth() + 1);
         console.log(dateInput.value);
-​
+    function others() {
+    if (document.getElementById('others').checked){
+        document.getElementById('otherAllergen').classList.remove('otherAllergen')
+    }
+    else {
+        document.getElementById('otherAllergen').classList.add('otherAllergen')
+    }
+}
     </script>
 ​
 ​
